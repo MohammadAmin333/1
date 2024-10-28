@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+    <header>
+        <h1>MIA'S Shop</h1>
+        <button id="addItemBtn">Add Item</button>
+    </header>
+
+    <main>
+        <div id="itemList" class="item-list">
+            <!-- Items will be dynamically displayed here -->
+        </div>
+    </main>
+
+    <div id="addItemModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add Item for Sale</h2>
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemPrice" placeholder="Item Price" required>
+            <input type="text" id="itemImage" placeholder="Image URL" required>
+            <button id="submitItem">Submit</button>
+        </div>
+    </div>
+
+    <script src="1.js"></script>
+</body>
+
+</html>
